@@ -3,21 +3,22 @@ it's a my quick way setup tailwind development environment
 ```
 
 ===============================
-1.Start run install (for make folder structur and input.css)
-2.instal tailwind moduler
+1.make folder projects and move this file on your folder project
+2.Start run install (for make folder structur and input.css)
+3.instal tailwind moduler
 npm i -D tailwindcss postcss autoprefixer
-3.inisiasi tailwind
+4.inisiasi tailwind
 npx tailwind init
-4.make router read tail edit tailwind.config.js
+5.make router tailwindcss for watch yout=r .html edit tailwind.config.js
    content: ['./public/**/*.{html,js}'],
 
-5.edit package.json for set auto
+6.edit package.json for set auto
 {
   "scripts": {
   "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/style-dev.css --watch",
   "realese": "npx tailwindcss -o ./public/css/style.css --minify"
   },
-6.this setup create index.html you can edit or add html code on "public/index.html" <br>
+7.this setup create index.html you can edit or add html code on "public/index.html" <br>
   if development use style-dev.css down here example code, but if production rewrite style-dev.css to style.css
  : <link  rel="stylesheet" href="./css/style-dev.css"/>  
  
@@ -34,7 +35,7 @@ npx tailwind init
        <section></section>
    </div>
 
-7.running
+8.running
 npm run dev
 //reasle product
 npm run realese
